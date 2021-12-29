@@ -1,0 +1,368 @@
+@font-face {
+    font-family: Larsseit-Medium;
+    src: url("Larsseit-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Larsseit-Thin;
+    src: url("Larsseit-Thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Larsseit-ThinItalic;
+    src: url("Larsseit-ThinItalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Larsseit-Light;
+    src: url("Larsseit-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Larsseit-LightItalic;
+    src: url("Larsseit-LightItalic.otf") format("opentype");
+}
+
+#header {
+    display: flex;
+    font-family: "larsseit-medium";
+    font-size: 28px;
+    bborder: 1px solid black;
+    margin-top: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#maincontainer{
+    width: 90%;
+    margin:auto;
+}
+
+#herocontainer{
+    height: 475px;
+    margin-top: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    border-radius: 40px;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+	/* background-size: 400% 400%; */
+	/* animation: gradient 15s ease infinite; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hitext{
+    font-family: "larsseit-medium";
+    font-size:75px;
+    background: linear-gradient(-45deg, #F27121, #e73c7e, #23a6d5);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+#subtext{
+    font-size: 52px;
+    font-family: "larsseit-thin";
+    margin-top: 15px;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+#contactbutton{
+    bbackground-color: #e73c7e;
+    padding: 10px;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    color: #e73c7e;
+    border-radius: 10px;
+    font-family: "larsseit-medium";
+    font-size: 16px;
+    border: 2px solid #e73c7e;
+    box-shadow: inset 0 0 0 0 #e73c7e;
+    -webkit-transition: ease-out .3s;
+    -moz-transition: ease-out .3s;
+    transition: ease-out .3s;
+}
+
+#contactbutton:hover {
+    cursor: pointer;
+    box-shadow: inset 100px 0 0 0 #e73c7e;
+    color: white;
+}
+
+ul {
+    display: inline;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+ul li {
+    display: inline;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: "larsseit-thin";
+    margin-left: 20px;
+}
+
+ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: 0.5s;
+}
+
+ul li a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: 100%;
+  left: 0;
+  background: #e73c7e;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+ul li a:hover {
+  color:white;
+}
+
+ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#righthead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* li:hover {
+    border-bottom: 2px solid #e73c7e;
+    cursor: pointer;
+} */
+
+body {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-bottom: 4%;
+}
+
+.project{
+    width: 48.5%;
+}
+
+.picture{
+    width: 100%;
+    border-radius: 40px;
+    height: 400px;
+    transition: all .2s ease-in-out; 
+}
+
+.picture:hover{
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+
+#tl {
+    background-color: #1b1b1b;
+    background-image: url("troylabs.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#honeybis{
+    background-color: #1b1b1b;
+    background-image: url("honeybis.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
+#pentridge{
+    background-color: #1b1b1b;
+    background-image: url("prdige.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+
+#wins{
+    background-color: #1b1b1b;
+    background-image: url("WINS.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
+
+.header{
+    padding-left: 3%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "larsseit-medium";
+}
+
+.text{
+    font-size: 30px;
+    margin-right: 3%;
+}
+
+.tag{
+    /* background-color: rgba(230,60,126,.44); */
+    background-color: #3E3E3E;
+    font-size: 14px;
+    border-radius: 10px;
+    padding-top: 11px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "larsseit-medium";
+    margin-left: 2%;
+    letter-spacing: 2px;
+}
+
+.tag:hover{
+    color: #e73c7e;
+    cursor: pointer;
+}
+
+.subtext{
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 4%;
+    font-family: "larsseit-thin";
+    font-size: 22px;
+    color: lightgrey;
+}
+
+#colormode{
+    position: fixed;
+    bottom: 3%;
+    left: 2%;
+    background-color:grey;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-image: url("sun.svg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#backgroundinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    align-items: center;
+}
+
+#bgtext {
+    width: 47%;
+    font-family: "larsseit-thin";
+    font-size: 28px;
+}
+
+#bgpicture {
+    width: 47%;
+    height: 450px;
+    border-radius: 20px;
+    background-image: url("elipic.jpg");
+    background-size: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+#skillsheader{
+    text-align: center;
+    color: #868686;
+    font-family: "larsseit-medium";
+    font-size: 28px;
+    margin-top: 8%;
+    margin-bottom: 4%;
+}
+
+.aboutrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-bottom: 4%;
+}
+
+#skills {
+    width: 40.5%;
+    background-color: #3E3E3E;
+    border-radius: 20px;
+    height: auto;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills2{
+    width: 40.5%;
+    background-color: #3E3E3E;
+    border-radius: 20px;
+    height: auto;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toprow{
+    font-size: 40px;
+    font-family: "larsseit-medium";
+    margin-bottom: 3.5%;
+}
+
+.bottomrow{
+    font-size: 23px;
+    font-family: "larsseit-thin";
+    line-height: 1.03;
+}
+
+#programtext{
+    font-family: "larsseit-medium";
+}
