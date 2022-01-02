@@ -23,6 +23,10 @@
     src: url("Larsseit-LightItalic.otf") format("opentype");
 }
 
+body{
+    margin: 0;
+}
+
 #header {
     display: flex;
     font-family: "larsseit-medium";
@@ -299,12 +303,13 @@ body {
 #bgtext {
     width: 47%;
     font-family: "larsseit-thin";
-    font-size: 28px;
+    font-size: 22px;
+    line-height: 1.5;
 }
 
 #bgpicture {
     width: 47%;
-    height: 450px;
+    height: 530px;
     border-radius: 20px;
     background-image: url("epic.jpg");
     background-size: 100%;
@@ -328,7 +333,7 @@ body {
     margin-top: 2%;
     padding-left: 6%;
     padding-right: 6%;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
 }
 
 #skills {
@@ -365,4 +370,71 @@ body {
 
 #programtext{
     font-family: "larsseit-medium";
+}
+
+#footercontainer{
+    background-color: #3E3E3E;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: auto;
+    margin-top: 6%;
+}
+
+#footerflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    bborder: 1px solid red;
+}
+
+#footwave{
+    font-size: 80px;
+    margin-right: 5.5%;
+}
+
+#leftfoot{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    bborder: 1px solid black;
+    width: 500px;
+}
+
+#textandbutton{
+    display: flex;
+    flex-direction: column;
+}
+
+#foottext{
+    font-size: 38px;
+    font-family: "larsseit-light";
+    margin-bottom: 3%;
+}
+
+#footbutton{
+    font-family: "larsseit-thin";
+    font-size: 18px;
+}
+
+#getintouch{
+    font-family: "larsseit-light";
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#socialicons{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#email{
+    width: 20%;
+}
+
+#linkedin{
+    width: 20%;
+    margin-left: 11%;
 }
