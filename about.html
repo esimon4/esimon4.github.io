@@ -19,7 +19,7 @@
             <div id="menu">
                 <ul id="menulist">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Work</a></li>
+                    <li><a id="work">Work</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </div>
@@ -93,38 +93,55 @@
             </div>
         </div>
     </div>
+    </div>
+</div>
 
-    <div id="footercontainer">
-        <div id="footerflex">
-    
-            <div id="leftfoot">
-    
-                <div id="footwave">
-                    👋
-                </div>
-        
-                <div id="textandbutton">
-                    <div id="foottext">
-                        Thanks for stopping by.
-                    </div>
-                    <div id="footbutton">
-                        <u>Back to top.</u>
-                    </div>
-                </div>
-        
+<div id="footercontainer">
+    <div id="footerflex">
+
+        <div id="leftfoot">
+
+            <div id="footwave">
+                👋
             </div>
     
-            <div id="rightfoot">
-                <div id="getintouch">
-                    Get in Touch
+            <div id="textandbutton">
+                <div id="foottext">
+                    Thanks for stopping by.
                 </div>
-                <div id="socialicons">
-                    <img id="linkedin" src="linked.svg">
-                    <img id="email" src="mail.svg">
+                <div id="footbutton">
+                    <u>Back to top.</u>
                 </div>
+            </div>
+    
+        </div>
+
+        <div id="rightfoot">
+            <div id="getintouch">
+                Get in Touch
+            </div>
+            <div id="socialicons">
+                <img id="linkedin" src="linked.svg">
+                <img id="email" src="mail.svg">
             </div>
         </div>
-    
     </div>
-    
-</div>
+
+</body>
+
+</html>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<script>
+    jQuery(document).ready(function(){
+        $("#work").on("click", function(){
+            window.open("index.html")
+            $("#worklocal")[0].scrollIntoView({block:"nearest", behavior:"smooth"});
+        })
+    })
+</script>
+
+
+
+</script>

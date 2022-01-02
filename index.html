@@ -19,7 +19,7 @@
             <div id="menu">
                 <ul id="menulist">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Work</a></li>
+                    <li><a id="work">Work</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
             </div>
@@ -38,8 +38,8 @@
     </div>
 
     
-    <div class="row">
-        <div class="project">
+    <div class="row" >
+        <div class="project" id="worklocal">
             <div class="picture" id="tl"></div>
             <div class="header">
                 <div class="text">TroyLabs</div>
@@ -117,12 +117,19 @@
 
 </body>
 
-<script src="http://iyawebdev.com/jqm.js"></script>
-<script src="http://iyawebdev.com/jqui.min.js"></script>
-<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<script src="homepagescript.js"></script>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+
 
 <script>
-
+    jQuery(document).ready(function(){
+        $("#work").on("click", function(){
+            $("#worklocal")[0].scrollIntoView({block:"nearest", behavior:"smooth"});
+        })
+    })
+</script>
 
 
 </script>
