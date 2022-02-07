@@ -9,3 +9,20 @@ document.querySelector("#contactbutton").addEventListener("click", function(){
 document.querySelector("#honeybis").addEventListener("click", function(){
     window.open("honeybis.html", "_self");
 })
+
+document.querySelector("#tl").addEventListener("click", function(){
+    window.open("troylabs.html", "_self");
+})
+
+//setting up light/dark mode button
+
+// document.querySelector("#colormode").addEventListener("click", function(){
+//     //alert("hey!");
+//     changecolor();
+// })
+
+// //creating function
+
+// var changecolor = function(){
+//     document.querySelector("#").style.color = "white";
+// }
