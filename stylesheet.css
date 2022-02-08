@@ -262,11 +262,6 @@ body {
     letter-spacing: 2px;
 }
 
-.tag:hover{
-    color: #e73c7e;
-    cursor: pointer;
-}
-
 .subtext{
     padding-left: 3%;
     padding-right: 3%;
@@ -471,6 +466,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 9%;
+    height: 530px;
+    margin-top: 1.5%;
+}
+
+#cover3 {
+    background-color: #1b1b1b;
+    background-image: url("WINS.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
     height: 530px;
     margin-top: 1.5%;
 }

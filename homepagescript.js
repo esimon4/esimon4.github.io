@@ -14,6 +14,10 @@ document.querySelector("#tl").addEventListener("click", function(){
     window.open("troylabs.html", "_self");
 })
 
+document.querySelector("#wins").addEventListener("click", function(){
+    window.open("wins.html", "_self");
+})
+
 //setting up light/dark mode button
 
 // document.querySelector("#colormode").addEventListener("click", function(){
