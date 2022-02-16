@@ -24,12 +24,13 @@ document.querySelector("#wins").addEventListener("click", function(){
 })
 
 document.querySelector("#pentridge").addEventListener("click", function(){
-    window.open("pentridge.html", "_self");
+    window.open("handbook.html", "_self");
 })
 
 document.querySelector("#linkedin").addEventListener("click", function(){
     window.open("https://www.linkedin.com/in/eli-simon-5256561bb/", "_blank");
 })
+
 //setting up light/dark mode button
 
 // document.querySelector("#colormode").addEventListener("click", function(){

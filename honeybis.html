@@ -28,7 +28,7 @@
                 <ul id="menulist">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="Eli_Simon_Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="Eli_Simon_Resume.pdf" download="Eli Simon Resume" target="_blank">Resume</a></li>
                 </ul>
             </div>
             <div id="contactbutton">
@@ -93,6 +93,22 @@
 
     </div>
 
+    <br>
+    <br>
+    <br>
+
+    <div class="ptext">
+        <em>The following is a preview of the final protoype — for more on my process, continue below.</em>
+    </div>
+
+    <br>
+
+    <video width="800" height="auto" name="3D Model Final" id="proto" controls>
+        <source src="finalprototype.mp4">
+    </video>
+
+    <br>
+
     <div class="subhead">Identifying the problem</div>
     <div class="ptext">
         Honeybis was entering a saturated market rife with misinformation and negative stigma. As such, Honeybis’s problems were two-fold:
@@ -107,7 +123,7 @@
 
     <div class="subhead">Mapping the solution</div>
     <div class="ptext">
-        In order to solve Honeybis’s problem, we set out to build a user experience that communicated Honeybis’s product in a succint manner. We compartmentalized our approach into three sections:
+        In order to solve Honeybis’s problem, we set out to build a user experience that communicated Honeybis’s product in a succinct manner. We compartmentalized our approach into three sections:
     </div>
 
     <div class="uxmap">
@@ -120,7 +136,7 @@
         <div class="uxcontainer">
             <div class="uxhead">Why?</div>
             <div class="uxtext">
-                Why buy CBD honey? What are its benefits? What makes Honeybis stand-out from competitors?
+                Why buy CBD honey? What are its benefits? What makes Honeybis stand out from competitors?
             </div>
         </div>
         <div class="uxcontainer">
@@ -173,7 +189,7 @@
             <div class="profpanel" class="rightsideprof">
                 <div class="uxhead">Wholesaler</div>
                 <div class="uxtext1">
-                    Looking to purchase Honeybis product in bulk at a discount.
+                    Looking to purchase Honeybis products in bulk at a discount.
                 </div>
             </div>
             <div class="profpanel" class="leftsideprof">
@@ -274,15 +290,15 @@
     </div>
 
     <div class="ptext">
-        We thought the 3D model to be an engaging medium to showcase benefits and additional information about CBD honey — its interactivity would draw users in and force them to engage with educational content concerining the product.
+        We thought the 3D model to be an engaging medium to showcase benefits and additional information about CBD honey — its interactivity would draw users in and force them to engage with educational content concerning the product.
     </div>
     <br>
     <div class="ptext">
-        After getting a sense of the model’s general flow, my partner mapped out the animation in much greater specificty — detailing how the model would move across various timeframes.
+        After getting a sense of the model’s general flow, my partner mapped out the animation in much greater specificity — detailing how the model would move across various timeframes.
     </div>
     <img id="storyboard2" src="storyboard.png">
     <div class="ptext">
-        Once we had finalized the storyboard, we worked with a third party animator to build out the 3-D model. The end animation — which would move forward and backwards as the user scrolled up and down — came out like this:
+        Once we had finalized the storyboard, we worked with a third-party animator to build out the 3-D model. The end animation — which would move forward and backward as the user scrolled up and down — came out like this:
     </div>
     <video width="800" height="600" name="3D Model Final" id="model" autoplay loop>
         <source src="animation.MOV">
@@ -294,6 +310,9 @@
     <video width="800" height="auto" name="Prototype" id="proto" controls>
         <source src="finalprototype.mp4">
     </video>
+    <div class="ptext">
+        You can find the live site <a href="https://honeybis.com/" target="_blank">here.</a> Please note not everything is according to design.
+    </div>
 </div>
 
 <div id="footercontainer">
@@ -328,6 +347,18 @@
     </div>
 
 </div>
+
+<script src="homepagescript.js"></script>
+<script src="http://code.jquery.com/jquery.js"></script>
+
+
+<script>
+    jQuery(document).ready(function(){
+        $("#footbutton").on("click", function(){
+            $("#header")[0].scrollIntoView({block:"nearest", behavior:"smooth"});
+        })
+    })
+</script>
 
 
 

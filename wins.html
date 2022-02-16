@@ -28,7 +28,7 @@
                 <ul id="menulist">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="Eli_Simon_Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="Eli_Simon_Resume.pdf" download="Eli Simon Resume" target="_blank">Resume</a></li>
                 </ul>
             </div>
             <div id="contactbutton">
@@ -54,17 +54,17 @@
     </div>
     <br>
     <div class="ptext">
-        WINS used market research data — be it in the form of survey responses or focus group conversations — to unlock consumer-centric marketing and product strategies for brands, political canidates, and causes.
+        WINS used market research data — be it in the form of survey responses or focus group conversations — to unlock consumer-centric marketing and product strategies for brands, political candidates, and causes.
     </div>
-    <div class="subhead">My Role & Responsibilites</div>
+    <div class="subhead">My Role & Responsibilities</div>
     <div class="ptext">
-        As a summer analyst, I worked alongside full-time analysts to assist in the execution of market research projects. More specefically, my responsibilities included:
+        As a summer analyst, I worked alongside full-time analysts to assist in the execution of market research projects. More specifically, my responsibilities included:
         <ol>
-            <li>Assisting in the planning, development, and analysis of qualitative and quantitative research projects aimed to identity market and political trends, with clients such as the New York Department of Health, Apple, and Penn State University.</li>
+            <li>Assisting in the planning, development, and analysis of qualitative and quantitative research projects aimed to identify market and political trends, with clients such as the New York Department of Health, Apple, and Penn State University.</li>
             <li>Facilitated research projects using industry best practices in the qualitative space with focus groups and in-depth interviews, and in the quantitative space with surveys, communications testing, and statistical analysis using Excel, SPSS, and cross-tabular software.</li>
             <li>Leveraging research findings to identify key social, cultural, and economic variables to explain consumer and voter behavior.</li>
         </ol>
-        From coding open-ended survey responses to developing and testing questionnares to aggregating research findings into slide decks, my time at WINS gave me a hands-on understanding of how to conduct research projects that unlock meaningful insights around who is buying your product and why.
+        From coding open-ended survey responses to developing and testing questionnaires to aggregating research findings into slide decks, my time at WINS gave me a hands-on understanding of how to conduct research projects that unlock meaningful insights around who is buying your product and why.
     </div>
     <div class="subhead">Takeaway #1 — Get to Know Your Users</div>
     <div class="ptext">
@@ -76,19 +76,23 @@
     </div>
     <br>
     <div class="ptext">
-        What I found particulary interesting was that companies were interested in their users beyond the ways in which they interacted with their products. Apple did not just care about why or how people used ApplePay  — they wanted to know about ApplePay users themselves. What are their pain points? What are their hobbies? What motivates them? This comprehensive approach to user research provided a truly holistic understanding of a given sect of consumers, allowing companies to make more informed, calculated product decisions.
+        What I found particularly interesting was that companies were interested in their users beyond the ways in which they interacted with their products. Apple did not just care about why or how people used ApplePay  — they wanted to know about ApplePay users themselves. What are their pain points? What are their hobbies? What motivates them? This comprehensive approach to user research provided a truly holistic understanding of a given set of consumers, allowing companies to make more informed, calculated product decisions.
+    </div>
+    <div id="storyboard">
+        <div class="storyboardrow">
+            <img src="wins2.png" class="storyimg">
+            <img src="wins1.png" class="storyimg">
+        </div>
     </div>
     <div class="subhead">Takeaway #2 — Segmenting the Market</div>
     <div class="ptext">
-        Political strategists often make differentiations between their base versus swing voters versus the opposition. WINS, using their “Political Model” takes a similar approach to market research — but instead of voters, they segment between customers.
+        Political strategists often make the differentiation between their base versus swing voters versus the opposition. WINS, using their “Political Model” takes a similar approach to market research — but instead of voters, they segment between customers.
     </div>
     <br>
     <div class="ptext">
-        Building clear and descriptive user profiles that segment between a product’s base, swing, and opposition consumers allow companies to make purposeful and informed decisions. Segmenting the consumer landscape allows start-ups and established brands alike to tailor communication, design, and marketing towards the consumers that matter. Activate the base, persuade the swing, ignore the rest.
+        Building clear and descriptive user profiles that segment between a product’s base, swing, and opposition consumers allows companies to make purposeful and informed decisions. Segmenting the consumer landscape allows start-ups and established brands alike to tailor communication, design, and marketing towards the consumers that matter. Activate the base, persuade the swing, ignore the rest.
     </div>
 </div>
-
-
 
 
 
@@ -127,6 +131,17 @@
 
 </div>
 
+<script src="homepagescript.js"></script>
+<script src="http://code.jquery.com/jquery.js"></script>
+
+
+<script>
+    jQuery(document).ready(function(){
+        $("#footbutton").on("click", function(){
+            $("#header")[0].scrollIntoView({block:"nearest", behavior:"smooth"});
+        })
+    })
+</script>
 
 
 </body>

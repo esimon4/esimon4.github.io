@@ -30,7 +30,7 @@
                 <ul id="menulist">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="Eli_Simon_Resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="Eli_Simon_Resume.pdf" download="Eli Simon Resume" target="_blank">Resume</a></li>
                 </ul>
             </div>
             <div id="contactbutton">
@@ -63,7 +63,7 @@
                 <div class="text">Honeybis</div>
                 <div class="tag">FREELANCE PROJECT</div>
             </div>
-            <div class="subtext">Designed a compelling and interactive landing page for cutting age CBD products.</div>
+            <div class="subtext">Designed a compelling and interactive landing page for cutting-edge CBD products.</div>
         </div>
     </div>
 
@@ -79,10 +79,10 @@
         <div class="project">
             <div class="picture" id="pentridge"></div>
             <div class="header">
-                <div class="text">Pentridge Station</div>
+                <div class="text">The Handbook</div>
                 <div class="tag">CLASS PROJECT</div>
             </div>
-            <div class="subtext">Developed a blog site with a favorites feature, reccomendation tool, and search function in native JS.</div>
+            <div class="subtext">Developed a blog site with a favorites feature, recommendation tool, and search function in JavaScript.</div>
         </div>
     </div>
 
@@ -126,14 +126,13 @@
 
 
 <script src="homepagescript.js"></script>
-
 <script src="http://code.jquery.com/jquery.js"></script>
 
 
 <script>
     jQuery(document).ready(function(){
-        $("#work").on("click", function(){
-            $("#worklocal")[0].scrollIntoView({block:"nearest", behavior:"smooth"});
+        $("#footbutton").on("click", function(){
+            $("#header")[0].scrollIntoView({block:"nearest", behavior:"smooth"});
         })
     })
 </script>

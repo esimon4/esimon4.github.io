@@ -1,0 +1,310 @@
+<html>
+
+    <title>Eli Simon | The Handbook</title>
+
+    <head>
+    
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    
+    </head>
+
+<body>
+
+<div id="maincontainer">
+
+    <div id="header">
+        <div id="lefthead">
+        Eli Simon
+        </div>
+        <div id="righthead">
+            <div id="menu">
+                <ul id="menulist">
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Eli_Simon_Resume.pdf" download="Eli Simon Resume" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+            <div id="contactbutton">
+                Contact
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="cover5"></div>
+
+<!-- <div id="cover4">
+    <h1>🛠 Under Construction</h1>
+    <br>
+    <h2><a href="index.html">Back to Home</a></h2>
+</div> -->
+
+<div id="textcontainer">
+    <h1>The Handbook</h1>
+    <h2>Front-End Development</h2>
+    <div class="subhead">Overview</div>
+    <div class="ptext">
+        This past fall, I took a front-end development course that covered HTML, CSS, JavaScript (a few web-dev relevant JS libraries), and responsive design. As a final project, I was paired with 3 other classmates and tasked to build a front-end web app from scratch. We built “The Handbook” — a college blog site that dispensed academic, social, and personal advice for first-year USC students. The final product can be found <a href="http://webdev.iyaclasses.com/~setan/acad275/Homepage.html" target="_blank">here</a>.
+    </div>
+    <br>
+    <div class="ptext">
+        While I helped spearhead design, the focal point of this blog post will be my work as the lead JavaScript developer on the project. Utilizing both native JavaScript and jQuery, I built out four main features:
+        <ol>
+            <li>
+                Favorites feature that allows users to favorite blog posts. Favorited blog posts are saved into the user’s local storage for easier future access.
+            </li>
+            <li>
+                Search feature that allows users to search blog posts and filter results by favorited blogs.
+            </li>
+            <li>
+                Profile feature that allows users to input their basic information, choose a custom theme, and view all of their favorite blog posts.
+            </li>
+            <li>
+                Recommendation tool that generates relevant blog posts based off the user’s answers to 8 different scaled and yes/no in-take questions.
+            </li>
+        </ol>
+    </div>
+
+    
+    <div id="overviewtoprow">
+
+        <div id="leftsiderow">
+            <div class="greytext">
+                Role
+            </div>
+            <div class="whitetext">
+                JavaScript Developer
+            </div>
+        </div>
+
+        <div id="rightsiderow">
+            <div class="greytext">
+                Timeline
+            </div>
+            <div class="whitetext">
+                Fall 2021
+            </div>
+        </div>
+
+    </div>
+
+    <div id="overviewbottomrow">
+
+        <div id="leftsiderow">
+            <div class="greytext">
+                Team
+            </div>
+            <div class="whitetext">
+                3 HTML/CSS Developers
+            </div>
+        </div>
+
+        <div id="rightsiderow">
+            <div class="greytext">
+                Deliverable
+            </div>
+            <div class="whitetext">
+                Front-End Web App
+            </div>
+        </div>
+
+    </div>
+
+    <div class="subhead">Feature #1 — Favorites</div>
+    <div class="ptext">
+        After the HTML and CSS were close to completion, I began work on the favorites feature. I started by storing all of the blog info (title, author, relevant keywords) as objects in a universal array. Then, I created an empty array for favorited blogs. The HTML was set up so each blog post had a corresponding heart icon with a unique ID. 
+    </div>
+    <br>
+    <div class="ptext">
+        When a blog’s heart icon is pressed, the code first checks to see if that blog is already stored into favorites. If it is not, the blog’s corresponding array object is pushed to the favorites array. That favorites array is then saved into local storage. Finally, the empty heart icon is replaced with a filled heart to improve the UX.
+    </div>
+    <br>
+    <div class="ptext">
+        Users can remove a blog from their favorite post section by clicking the filled-in heart icon. When a user presses the filled-in heart icon, the code  parses through the favorites array, finds where that specific blog is, and removes it.
+    </div>
+    <br>
+    <div class="ptext">
+        Every time the page is loaded, the code parses local storage to find existing favorites, re-stores those blogs into the favorites array, and fills in all of the hearts of the favorite blogs that were in storage. The end result came out like this:
+    </div>
+    <video width="800" height="auto" name="Prototype" id="proto" controls>
+        <source src="handbook1.mov">
+    </video>
+
+    <div class="subhead">Feature #2 — Search</div>
+    <div class="ptext">
+        The next feature I built out was the search function. Each blog subpage had its own search bar with a unique HTML ID. I began by creating a simple event listener that, when the user clicks the ‘run search’ icon, passes the word(s) they typed through an external function. 
+    </div>
+    <br>
+    <div class="ptext">
+        The external function then takes the search phrase and, using an indexOf() method, checks it against the title, authors, and keywords stored into each blog’s respective array object.
+    </div>
+    <br>
+    <div class="ptext">
+        If the search phrase matches any blog’s title, author, or keywords, the code printed that blog out in the search results. If there is no match, and the indexOf() returned a -1 value, an error message prints. The favorites feature integrates seamlessly with the search function — users can favorite and un-favorite blog posts directly from their search results.
+    </div>
+    <br>
+    <div class="ptext">
+        Finally, users can filter their search by choosing to search all blog posts or just their favorited ones. Here’s how the feature turned out:
+    </div>
+    <video width="800" height="auto" name="Prototype" id="proto" controls>
+        <source src="handbook2.mov">
+    </video>
+    <div class="subhead">Feature #3 — Profile Page</div>
+    <div class="ptext">
+        After polishing the search function, I moved on to  the profile feature. The goal was two-fold:
+        <ol>
+            <li>
+                Create a portion of the site that was customizable for each user
+            </li>
+            <li>
+                Leverage local storage to make sure the custom content didn’t vanish on a simple reload
+            </li>
+        </ol>
+    </div>
+    <div class="ptext">
+        With these two goals in mind, I began to map out an intake form where users could input their name, email, and college as well as choose a custom theme. Their inputted information would then display on a designated “profile page,” alongside their favorite blogs.
+    </div>
+    <br>
+    <div class="ptext">
+        I began by setting up the form in HTML, creating simple text fields for the name, email, and college inputs as well as a radio button for the theme. I then wrote a JavaScript routine that took a user’s answers to the form items and sent them to local storage.
+    </div>
+    <br>
+    <div class="ptext">
+        After adding some minor data validation routines to ensure that users were answering every question and correctly inputting their emails, I built out the HTML and CSS for the main profile page. On load, the profile page would parse local storage for the user’s inputted information and display it on the profile page. I created an “edit profile” button so that users would also have the option to change their personal information.
+    </div>
+    <br>
+    <div class="ptext">
+        Finally, I wrote a routine that printed out the user’s favorite blogs from all of the site’s three subpages — academic, social, and personal. I wrote another routine that allowed users to remove favorites directly from their profile page. The end product came out like this:
+    </div>
+    <video width="800" height="auto" name="Prototype" id="proto" controls>
+        <source src="handbook3.mov">
+    </video>
+
+    <div class="subhead">Feature #4 — Recommendation Tool</div>
+    <div class="ptext">
+        The last (but certainly not least) feature I worked on was a recommendation tool for first-time users. The idea was that users would answer a series of college-related questions and the code would recommend blog posts based on their answers.
+    </div>
+    <div class="ptext">
+        I began with writing out nine different questions that covered each blog subject on the website — from off-campus housing to restaurant ideas to academic support. Some of the questions constituted simple yes/no’s, while others had scaled responses (on a scale from 1-5 ... ?).     </div>
+    <br>
+    <div class="ptext">
+        Then I created 18 variables (one for each blog on the website) and set their values to 0. The idea was that every time a user’s answer correlated to a certain blog subject (for example, they answered ‘yes’ to a question asking if they were in need of housing and there are 2 blog posts offering advice for off-campus housing searches) the code would add a value of “1” to the blog’s respective variable.
+    </div>
+    <br>
+    <div class="ptext">
+        So I wrote a conditional logic function for each question that would bump the value of relevant blogs if a certain answer was recorded. Again, the idea was if the user answered yes, or offered a scaled response above 3 or 4, to bump up the value of whatever blog posts were relevant to that question. Here are a few examples:
+    </div>
+    <div class="profilecontainer">
+
+        <div class="profile" id="head">
+            <div class="rightsideprof">
+                <div class="uxtext2">
+                    Question
+                </div>
+            </div>
+            <div class="leftsideprof">
+                <div class="uxtext2">
+                    Conditional Logic
+                </div>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="profpanel2" class="rightsideprof">
+                <div class="uxtext3">
+                    Are you looking for resources for mental health and counseling that are easily available for students?
+                </div>
+            </div>
+            <div class="profpanel2" class="leftsideprof">
+                <div class="uxtext3">
+                    If yes, bump the value of “Counseling and Mental Health Services for Students” by 1.
+                </div>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="profpanel2" class="rightsideprof">
+                <div class="uxtext3">
+                    On a scale of 1-5 (with 1 being not often and 5 being very often), how often do you have trouble finding the right classes and/or professors?
+                </div>
+            </div>
+            <div class="profpanel2" class="leftsideprof">
+                <div class="uxtext3">
+                    If 3, bump the value of “The 6 Most Useful USC Classes for Life” by 1.
+                    <br><br>
+                    If 4 or above, bump the value of “USC Professors rate RateMyProfessors.com” by 2.
+                </div>
+            </div>
+        </div>
+    <br><br>
+    <div class="ptext">
+        I set up the conditional logic so that each blog had an equal chance of being recommended — which required me to re-work the questions a bit after the fact so each blog subject could be tailored to.   
+    </div>
+    <br>
+    <div class="ptext">
+        In the end, the code checks each variable, and if the value of the variable is equal to or greater than 2, the variable’s corresponding blog will be recommended to the user. If no variable had a final value of 2 or more, the code would print a random blog. Here’s how it turned out (note the last run-through I purposefully answered negatively to every question so as to generate a random blog):
+    </div>
+    </div>
+    <video width="800" height="auto" name="Prototype" id="proto" controls>
+        <source src="handbook4.mov">
+    </video>
+</div>
+
+<div id="footercontainer">
+    <div id="footerflex">
+
+        <div id="leftfoot">
+
+            <div id="footwave">
+                👋
+            </div>
+    
+            <div id="textandbutton">
+                <div id="foottext">
+                    Thanks for stopping by.
+                </div>
+                <div id="footbutton">
+                    <u>Back to top.</u>
+                </div>
+            </div>
+    
+        </div>
+
+        <div id="rightfoot">
+            <div id="getintouch">
+                Get in Touch
+            </div>
+            <div id="socialicons">
+                <img id="linkedin" src="linked.svg">
+                <img id="email" src="mail.svg">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="homepagescript.js"></script>
+<script src="http://code.jquery.com/jquery.js"></script>
+
+
+<script>
+    jQuery(document).ready(function(){
+        $("#footbutton").on("click", function(){
+            $("#header")[0].scrollIntoView({block:"nearest", behavior:"smooth"});
+        })
+    })
+</script>
+
+
+</body>
+
+</html>
+
