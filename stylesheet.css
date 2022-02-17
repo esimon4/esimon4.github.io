@@ -785,3 +785,8 @@ a{
 #footbutton:hover{
     cursor: pointer;
 }
+
+#boldtext{
+    display: inline;
+    font-family: "larsseit-medium";
+}
