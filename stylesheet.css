@@ -227,7 +227,7 @@ body {
 
 #wins{
     background-color: #1b1b1b;
-    background-image: url("wins.svg");
+    background-image: url("WINS.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40%;
@@ -821,10 +821,10 @@ a{
 }
 
 #winsthumb{
+    background-image: url("WINS.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 38%;
-    background-image: url("WINS.svg");
 }
 
 #handbookthumb{
