@@ -321,6 +321,15 @@ body {
     margin-bottom: 4%;
 }
 
+#otherprojects{
+    text-align: center;
+    color: #868686;
+    font-family: "larsseit-medium";
+    font-size: 22px;
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+
 .aboutrow {
     display: flex;
     flex-direction: row;
@@ -789,4 +798,70 @@ a{
 #boldtext{
     display: inline;
     font-family: "larsseit-medium";
+}
+
+#projects{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectssmall{
+    width: 31.3%;
+    background-color: #1B1B1B;
+    height: 200px;
+    border-radius: 20px;
+}
+
+#tlthumb{
+    background-image: url("troylabs.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+}
+
+#winsthumb{
+    background-image: url("wins.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 38%;
+}
+
+#handbookthumb{
+    background-image: url("handbooklogo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+#honeybisthumb{
+    background-image: url("honeybis.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45%;
+}
+
+.imgoverlay {
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, .6);
+    color: white;
+    font-family: "larsseit-medium";
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    border-radius:15px;
+    font-size: 20px;
+    text-align:center;
+    opacity:0;
+    transition: opacity .5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imgoverlay:hover {
+    opacity:1;
 }
