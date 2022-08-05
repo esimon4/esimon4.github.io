@@ -41,7 +41,7 @@ body{
 #herocontainer, .row, #footerflex, #header {
 	max-width: 1200px;
 	width: 100%;
-	margin: 2% auto 0;
+	margin: 0 auto;
 }
 
 *, *:before, *:after {
@@ -55,6 +55,7 @@ body{
 
 #herocontainer{
     height: 475px;
+    margin-top: 2%;
     padding-left: 6%;
     padding-right: 6%;
     border-radius: 40px;
