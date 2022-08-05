@@ -38,10 +38,17 @@ body{
     align-items: center;
 }
 
-#herocontainer, .row, #footerflex, #header {
-	max-width: 1200px;
-	width: 100%;
-	margin: 0 auto;
+#herocontainer, .row, #header, #footerflex {
+    max-width: 1200px;
+    width: 100%;
+}
+
+#herocontainer, .row, #header {
+    margin: 2% auto 0;
+}
+
+#footerflex {
+    margin: 0 auto;
 }
 
 *, *:before, *:after {
@@ -55,7 +62,6 @@ body{
 
 #herocontainer{
     height: 475px;
-    margin-top: 2%;
     padding-left: 6%;
     padding-right: 6%;
     border-radius: 40px;
