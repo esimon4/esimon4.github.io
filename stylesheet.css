@@ -38,10 +38,14 @@ body{
     align-items: center;
 }
 
-#herocontainer, .row, #footercontainer {
+#herocontainer, .row, #footerflex, #header {
 	max-width: 1200px;
 	width: 100%;
 	margin: 2% auto 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
 }
 
 #maincontainer{
@@ -394,8 +398,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
     bborder: 1px solid red;
 }
 
